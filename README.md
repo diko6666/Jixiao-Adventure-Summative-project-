@@ -1,36 +1,51 @@
-# Jixiao Adventure (Super Mario Tutorial)
+# Jixiao Adventure
 
-Java step-by-step tutorial project for building a Super Mario-style game.
+Jixiao Adventure is a Mario-style platform game built in Java. You can play it from the main menu, pause during gameplay, and restart or return to the menu after a win or game over.
 
-## Project layout
+## Game Functions
 
-```
-Starfall_adventure/
-├── SuperMario/          # Complete game (lesson 23) — open this in IntelliJ to run
-├── lessons/             # 23 tutorial steps (01–23), each with code for that stage
-├── assets/
-│   ├── images/        # Shared sprites (used by all lessons via links)
-│   └── music/         # Background music
-├── lib/
-│   └── jlayer-1.0.1.jar
-└── README.md
-```
+- `Start`: begin a new level run.
+- `Settings`: turn background music on or off.
+- `Tutorials`: view the control guide and gameplay tips.
+- `Pause`: stop the action during a game and choose `Resume` or `Quit to Menu`.
+- `Game Over / Victory`: show your final score and let you retry or go back to the menu.
 
-## How to run
+## Controls
 
-1. Open the project root in IntelliJ IDEA.
-2. Use the **SuperMario** module.
-3. Run `com.sxt.MyFrame` (main class).
-4. Use the main menu: **START**, **SETTINGS** (music on/off), **TUTORIALS** (controls & tips).
-5. In-game controls: arrow keys to move/jump, **Space** to shoot fireballs.
+### Main Menu
 
-## Tutorial lessons
+- `Up` / `Down`: move through menu options
+- `Enter`: confirm the selected option
+- Mouse click: choose a menu button directly
 
-Each folder under `lessons/` is one chapter. Open `lesson-guide.txt` in a lesson folder for the video link.
+### In Game
 
-Work through lessons in order (`01-create-window` → `23-fireball-shooting`), or run the finished game from `SuperMario/`.
+- `Left` / `Right`: move Mario
+- `Up`: jump
+- `Space`: shoot a fireball when Mario is big
+- `Esc`: pause the game
 
-## Notes
+### Pause Screen
 
-- Image and music files live once in `assets/` and are linked into each lesson’s `SuperMario/src/` to avoid duplication.
-- Java classes use English names (e.g. `Fireball`, `PowerUp`) instead of pinyin (`HuoQiu`, `DaoJu`).
+- `Esc`: resume the game
+- `Up` / `Down`: switch between `Resume` and `Quit to Menu`
+- `Enter`: confirm the selection
+
+### Game Over / Victory Screen
+
+- `Left` / `Right`: switch between `Retry` and `Menu`
+- `Enter`: confirm the selection
+- Mouse click: choose a button directly
+
+## Gameplay Tips
+
+- Jump on enemies from above to defeat them.
+- Break or hit question blocks to get coins or power-ups.
+- Reach the flag at the end of level 3 to win.
+
+## Run the Game
+
+1. Open the `SuperMario` module in IntelliJ IDEA.
+2. Run `com.sxt.MyFrame`.
+3. Use the main menu to start playing.
+
